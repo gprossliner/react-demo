@@ -1,3 +1,5 @@
+# Steps performed
+
 ## Created Directory structure
     md src
     md build
@@ -39,3 +41,15 @@ file of webpack
 ## add .gitignore
 node_modules
 
+# Testing
+
+## Compile in terminal
+We have not integrated anything to .vscode, so we build from terminal:
+
+    npm run build
+
+app.js should now be generated, including all dependencies (currently only helloworld_module). It should be about 1.8k.
+
+## Open a browser to check
+* You may open from file:// in chrome, and look how "Hello World" is printed to the console.
+* You also may step though by using F11, so that you may see how modules get loaded in webpack.
