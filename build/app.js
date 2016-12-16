@@ -44,26 +44,7 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(1);
-
-
-/***/ },
-/* 1 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var helloworld_module_1 = __webpack_require__(2);
-	console.log(helloworld_module_1["default"]);
-
-
-/***/ },
-/* 2 */
-/***/ function(module, exports) {
-
-	"use strict";
-	var greeting = "Hello World!";
-	exports.__esModule = true;
-	exports["default"] = greeting;
+	(function webpackMissingModule() { throw new Error("Cannot find module \"./src/app.tsx\""); }());
 
 
 /***/ }
