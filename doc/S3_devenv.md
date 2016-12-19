@@ -43,3 +43,15 @@ See changes in webpack.config.js. After this, webpack generates SourceMaps, and 
 
 See changes in tsconfig.json. After this, you see the jsx sytax in the Debugger.
 
+## Debug locally in vscode
+
+We should enable F5 / CTRL+F5.
+
+* add a "lauch" task to tasks.json
+The "problemMatcher" is required for it to function. This caused me some headache.....
+
+* install the "Debugger for Chrome" extension.
+See the extensions.json in .vscode
+
+* add the chrome "userDataDir" to gitignore, so that we don't commit this stuff
+

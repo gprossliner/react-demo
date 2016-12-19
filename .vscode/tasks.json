@@ -8,8 +8,23 @@
     "suppressTaskName": true,
     "tasks": [
         {
-            "taskName": "devserver",
-            "args":["run", "devserver"],
+            "taskName": "launch",            
+            "args":[
+                "run", 
+                "launch",
+                "--silent"
+            ],
+            "problemMatcher": [
+				{
+					"owner": "custom",
+					"pattern": [],
+					"watching": {
+						"activeOnStart": true,
+						"beginsPattern": "webpack: bundle is now INVALID",
+						"endsPattern": "webpack: bundle is now VALID"
+					}
+				}
+            ],
             "isWatching": true
         },
         {

@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:8080/webpack-dev-server/",
+            "sourceMaps": true,
+            "webRoot": "${workspaceRoot}",   
+            "preLaunchTask": "launch",        
+            "smartStep": true,            
+            "internalConsoleOptions": "openOnSessionStart",
+            "userDataDir": "${workspaceRoot}/.vscode/chrome"    /* we need this to allow to debug while other chrome processes are running */
+        }
+    ]
+}
