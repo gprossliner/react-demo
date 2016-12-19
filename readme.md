@@ -3,3 +3,6 @@
 
 # STEP 2: Setup react
 [Get some basic react component running](./doc/S2_SetupReact.md)
+
+# STEP 3: Developing experience
+[Server, SourceMaps and VS Code](./doc/S3_devenv.md)
