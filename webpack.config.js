@@ -26,6 +26,8 @@ var config = {
     extensions: ["", ".ts", ".tsx", ".js"]
   },
 
+  devtool:"sourcemap",
+
   module: {
     /*
      * Each loader needs an associated Regex test that goes through each

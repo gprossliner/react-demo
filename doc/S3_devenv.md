@@ -30,3 +30,16 @@ we create a "launch" npm script.
 * open http://localhost:8080/, change and F5 for reload
 * or open http://localhost:8080/webpack-dev-server/ to get auto-reload!
 
+## Source Maps
+
+SourceMaps are like .pdb files for the generated app.js. They match the compiled code to the original source.
+This allows to debug in a friendly way.
+
+### Enable Source Maps on for the compiler (webpack)
+
+See changes in webpack.config.js. After this, webpack generates SourceMaps, and you can use it (test with debugger;)
+
+### Enable Source Maps for typescript
+
+See changes in tsconfig.json. After this, you see the jsx sytax in the Debugger.
+
