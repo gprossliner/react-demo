@@ -48,4 +48,18 @@ See the source there. This is where react will render everything into!
 
 ## Rewrite app.tsx to use the react-dom
 
-We basically create an instance of the HelloWorld component, and render it with react-dom to
+We basically create an instance of the HelloWorld component, and render it with react-dom to the root-div
+
+
+# Testing
+
+## Compile in terminal
+Compile again in terminal
+
+    npm run build
+
+app.js is generated. In includes all dependencies (like react and react-dom). It now is ~740 kB.
+We don't do any minify here, this will greatly reduce in size.
+
+## Open a browser to check
+* You may open from file:// in chrome, and look how "Hello World" in the document
