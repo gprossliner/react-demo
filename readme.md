@@ -9,3 +9,7 @@
 
 # STEP 4: React improvments
 [Managing State, Functional Components](./doc/S4_react.md)
+
+# STEP 5: A real application (GitHubRepoSearch)
+[GitHubRepoSearch](./doc/S5_githubreposearch.md)
+
