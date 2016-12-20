@@ -2,6 +2,10 @@
   "compilerOptions": {
     /* tells Typescript to accept React’s JSX syntax whenever we create a file with a “.tsx” extension. */
     "jsx": "react",
-    "sourceMap": true
+    "sourceMap": true,
+    "lib":[
+      "dom",
+      "es2015"
+    ]
   }
 }

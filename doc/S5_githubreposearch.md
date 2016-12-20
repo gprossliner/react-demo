@@ -35,3 +35,24 @@ Shows how easy it is, to create "container" Components.
 Some notes:
 * We also integrated bootstrap, but direclty, not with less / webpack
 * The root-level app now directly contains the RepoSearch-App, the code from the previous examples is still there, but not references
+
+# Comsume the REST service
+
+Let's wire up the service. We'll take it from the Angular implemenation!
+
+## Choosing a Client
+
+We'll use axios (https://github.com/mzabriskie/axios), because:
+
+* It's very popular
+* It runs in browser and node.js
+* It direclty contains typescript definitions
+* It supports native ES6 Promises
+
+For Angular users:
+"axios is heavily inspired by the $http service provided in Angular. Ultimately axios is an effort to provide a standalone $http-like service for use outside of Angular."
+
+## rxjs
+
+React has no dependency to rxjs, so we'll be using Promises directly.
+

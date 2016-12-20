@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Repository } from "../shared/repository.model"
 import RepoList from "./RepoList"
+import { GitHubService } from "../services/GitHubService";
 
 export default class RepoSearch extends React.Component
 <
@@ -14,25 +15,41 @@ export default class RepoSearch extends React.Component
 >
 {
 
+    private _gitHubService : GitHubService;
+
     constructor(props){
         super(props);
 
+        this._gitHubService = new GitHubService();        
+
         // create initial state
         this.state = {
-            searchResult : [
-           /*     {
-                    description : "desc",
-                    forksCount : 0,
-                    name : "name",
-                    owner : "owner",
-                    ownerAvatarUrl : "ulr",
-                    repositoryUrl : "file://",
-                    watchersCount : 0
-                } */
-            ],
+            searchResult : [],
             searchText : ""
         };
         
+    }
+
+    handleKeyPress(e){
+        if(e.key == "Enter"){
+            const search = e.target.value;
+            this.setState({
+                searchText : search,
+                searchResult : []
+            });
+
+            if(search.length > 0){
+                this._gitHubService.findRepos(search)
+                .then(repos=>{
+                    console.log(repos);
+                    this.setState({
+                        searchText : search,
+                        searchResult : repos
+                    });
+                });
+            }                
+            
+        }
     }
 
     render() {
@@ -45,7 +62,7 @@ export default class RepoSearch extends React.Component
         return <div>
             <h3 className="repo-search">Github Repos {badgeSpan}</h3>
             <div className="input-group ">
-                <input type="text" className="form-control" placeholder="Search Github Repos...." />
+                <input type="text" onKeyPress={e=>this.handleKeyPress(e)} className="form-control" placeholder="Search Github Repos...." />
                 {searchActive && <span>Ihre Suche nach <b>{this.state.searchText}</b> ergab folgende Treffer:</span>}            
             </div>
             <RepoList repositories={this.state.searchResult} />

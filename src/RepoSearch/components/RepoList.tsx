@@ -10,7 +10,7 @@ export default (
 
 <ul className="list-group">
     {props.repositories.map(r=>
-        <li className="list-group-item" key={r.name}>
+        <li className="list-group-item" key={r.id}>
             <RepoTile repository={r} />
         </li>
     )}
