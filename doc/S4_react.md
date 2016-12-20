@@ -8,3 +8,6 @@ They can be definied just as a (lamda) function. See HelloLabel.tsx
 * passing strong typed (!!!) state as props
 Props is read-only state in react. It's like attributes in html tags.
 We'll start with a greeting in HelloLabel.tsx
+
+* try to refactor from "name" to "text"!!!
+
