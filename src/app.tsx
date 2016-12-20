@@ -3,6 +3,6 @@ import * as ReactDOM from "react-dom";
 import HelloLabel from "./HelloLabel";
 
 ReactDOM.render(
-  <HelloLabel />,
+  <HelloLabel name="Günter" />,
   document.getElementById("root")
 );
