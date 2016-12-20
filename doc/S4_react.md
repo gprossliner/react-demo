@@ -11,3 +11,9 @@ We'll start with a greeting in HelloLabel.tsx
 
 * try to refactor from "name" to "text"!!!
 
+## Working with lists
+
+* Let's extent the HelloLabel component with a simple list of Hobbies.
+Please note that you can do anything you can do in .js also in .tsx.
+For this example we'll use the js .map function to create React 'li' elements from a string array.
+
