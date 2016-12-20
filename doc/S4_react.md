@@ -17,3 +17,16 @@ We'll start with a greeting in HelloLabel.tsx
 Please note that you can do anything you can do in .js also in .tsx.
 For this example we'll use the js .map function to create React 'li' elements from a string array.
 
+* Please note the "key" property. This is used for better DOM merging performance!
+
+## Working with state and events
+
+* state represents the dynamic state of a component ([state-and-lifecycle](https://facebook.github.io/react/docs/state-and-lifecycle.html))
+* Events can be bound directly as a function, not as a string ([events](https://facebook.github.io/react/docs/handling-events.html))
+
+## Working with the real DOM
+
+You (sometimes) need to work with the real DOM, to interact with the browser. Let's modify the TimeButton to automatically update itself by a timer.
+
+I will also show you how to set the initial state with (optional) props.
+
