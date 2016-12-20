@@ -1,8 +1,8 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import HelloWorld from "./helloworld";
+import HelloLabel from "./HelloLabel";
 
 ReactDOM.render(
-  <HelloWorld />,
+  <HelloLabel />,
   document.getElementById("root")
 );
