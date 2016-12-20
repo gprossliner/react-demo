@@ -6,3 +6,6 @@
 
 # STEP 3: Developing experience
 [Server, SourceMaps and VS Code](./doc/S3_devenv.md)
+
+# STEP 4: React improvments
+[Managing State, Functional Components](./doc/S4_react.md)
