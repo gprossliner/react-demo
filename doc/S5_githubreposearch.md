@@ -1,9 +1,8 @@
-# Steps performed
 # Migrating the Angular demo to search for github repositories
 
 Angular Version: https://github.com/world-direct/Modern_Frontend_Development_Sources/tree/02_Angular
 
-## Setup
+## Create App Structure
 
 I will use the same component layout as in the Angular version of the Application.
 
@@ -28,3 +27,11 @@ Renderes the list of the search results
 ## RepositoryTile
 
 Renderes a single result
+
+## NgIf
+
+Shows how easy it is, to create "container" Components.
+
+Some notes:
+* We also integrated bootstrap, but direclty, not with less / webpack
+* The root-level app now directly contains the RepoSearch-App, the code from the previous examples is still there, but not references

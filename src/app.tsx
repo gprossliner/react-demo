@@ -1,12 +1,8 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import HelloLabel from "./HelloLabel";
-import TimeButton from "./TimeButton";
+import RepoSearchApp from "./RepoSearch/App"
 
 ReactDOM.render(
-  <div>
-    <HelloLabel name="Günter" hobbies={["music", "programming"]} />
-    <TimeButton />
-  </div>,
+  <RepoSearchApp name="World-Direct" />,
   document.getElementById("root")
 );
