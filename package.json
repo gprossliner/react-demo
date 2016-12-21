@@ -1,5 +1,5 @@
 {
-  "name": "typescript-react-webpack",
+  "name": "react-demo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,7 @@
   },
   "keywords": [],
   "author": "guenter.prossliner@world-direct.at",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/react": "^0.14.55",
     "@types/react-dom": "^0.14.19",
