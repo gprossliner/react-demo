@@ -13,3 +13,5 @@
 # STEP 5: A real application (GitHubRepoSearch)
 [GitHubRepoSearch](./doc/S5_githubreposearch.md)
 
+# STEP 6: Further readings
+[Further readings](./doc/S6_furtherreadings.md)
